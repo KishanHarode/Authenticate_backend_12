@@ -1,6 +1,9 @@
 import User from "../Model/UserModel.js";
 import bcrypt from "bcrypt";
-import generateToken from "../config/generateToken.js";
+// import generateToken from "../config/generateToken.js";
+// // Correct (when using ES Modules)
+import generateToken from '../config/generateToken.js';
+
 
 // Signup
 export const signup = async (req, res) => {
